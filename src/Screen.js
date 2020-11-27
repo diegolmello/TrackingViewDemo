@@ -42,8 +42,8 @@ export default class KeyboardTrackingViewScreen extends PureComponent {
     });
   };
 
-  pushScreen = options => {
-    console.log('push')
+  pushScreen = () => {
+    this.props.navigation.push('Screen')
   };
 
   renderChatBubbles() {
